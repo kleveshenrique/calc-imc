@@ -26,8 +26,12 @@
             
             let altura = document.getElementById("altura").value;
             let peso = document.getElementById("peso").value;
+            
+           pessoa = {altura: altura,peso: peso}
 
-           let imc = peso/(altura*altura);
+            let imc = pessoa.peso/(pessoa.altura*pessoa.altura);
+
+            
            //mensagem a ser exibida conforme IMC
            let mensagem = "";
            
